@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Question 14 </title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+th, td {
+    padding: 5px;
+    text-align: center;
+}
+</style>
+</head>
+<body>
+
+<table style="width:100%" id="someTable">
+   <center><strong> Scores </strong><center>
+  <tr>
+    <th class="name">First Name</th>
+    <th class="lname">Last Name</th>
+    <th class="scores">Score</th>
+  </tr>
+  <tr>
+    <td class="name">Pavleen </td>
+    <td class="lname">Kaur </td>
+    <td class="scores">80</td>
+  </tr>
+  <tr>
+    <td class="name">Riya</td>
+    <td class="lname">Arora</td>
+    <td class="scores">90</td>
+  </tr>
+   <tr>
+    <td class="name">Aditya</td>
+    <td class="lname">Garg</td>
+    <td class="scores">8</td>
+  </tr>
+<tr>
+    <td class="name">Karan</td>
+    <td class="lname">luthra</td>
+    <td class="scores">50</td>
+  </tr>
+</table>
+<script>
+$(document).ready(function(){
+
+    $('.scores').each(function(i, n) {
+   if($(n).text() > 10) 
+      $(n).css('color', 'red').css('background-color','yellow');
+});
+});
+</script>
+<a href="contents.html">Navigate to other questions</a>
+
+</body>
+</html>
+

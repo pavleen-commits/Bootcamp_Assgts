@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Question 17</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta content="text/html; charset=iso-8859-2" http-equiv="Content-Type">
+<link rel="stylesheet" href="17.css">
+<style>
+.mySlides {display:none;}
+</style>
+</head>
+
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:500px">
+  <img class="mySlides" src="download.jfif" style="width:100%">
+  <img class="mySlides" src="download1.jfif" style="width:100%">
+  <img class="mySlides" src="download2.jfif" style="width:100%">
+  <img class="mySlides" src="download3.jfif" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 500); 
+}
+</script>
+<br>
+<a href="contents.html">Navigate to other questions</a>
+
+
+</body>
+</html>

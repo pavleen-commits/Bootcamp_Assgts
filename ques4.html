@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Question 4</title>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style>
+  .submiton
+   { color:blue;}
+
+ .submitoff
+   { color:red;}
+</style>
+
+</head>
+
+<body>
+
+<script type="text/javascript">
+
+$(document).ready(function()
+{
+    $("[value=submit]").click( function()
+    { 
+            $('[value=submit]').attr("disabled", true).addClass('submitoff'); 
+    });
+});
+
+</script>
+
+<center>
+    <p><b> Disabling the Submit Button </b></p>
+    <input type="submit" value="submit"  name="submit" class="submiton"/>
+    </br>
+    <h4> Click on the button once to disable it</h4>
+</center>
+
+<a href="contents.html">Navigate for other questions</a>
+
+</body>
+</html>
+
+
+
