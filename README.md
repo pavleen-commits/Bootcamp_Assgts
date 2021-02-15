@@ -19,6 +19,7 @@
   <li>multiplying 2 int</li>
   <li>concate 2 string</li>
   <li>Concate 3 String</li>
+  </ol>
 <li>Q11.Create 3 sub class of bank SBI,BOI,ICICI all 4 should have method called getDetails which provide there specific details like rateofinterest etc,print details of every banks
 </li>
 </ul>
